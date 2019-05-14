@@ -1,0 +1,77 @@
+body, html, main {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777; }
+
+.body-font {
+  font-family: upgrade-lights, sans-serif;
+  font-weight: 400;
+  font-style: normal; }
+
+.header-font {
+  font-family: bebas-neue-rounded, sans-serif;
+  font-weight: 400;
+  font-style: normal; }
+
+.navbar.navbar-expand-sm.navbar-dark.nav-bg {
+  background-color: black; }
+
+#main-nav {
+  top: -100%;
+  width: 100%;
+  transition: top 0.3s; }
+
+.par-head, .par-mid, .par-bottom {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.par-head {
+  background-image: url("/static/img/1 - Monza/3S3A7005.jpg");
+  min-height: 100%; }
+
+h1.header-font {
+  letter-spacing: 1rem;
+  text-underline-position: below;
+  color: white; }
+
+hr.new1 {
+  border-top: 3px solid #f36e21;
+  width: 17rem; }
+
+hr.new2 {
+  border-top: 3px solid #f36e21;
+  width: 7rem; }
+
+#about {
+  background-image: url("/static/img/1 - Monza/A38I5209.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.about-sec {
+  opacity: 0.8;
+  background-color: black; }
+
+.about-text {
+  opacity: 1; }
+
+.btn.btn-hover {
+  border-color: #ff9800;
+  color: orange;
+  box-shadow: 0 4px #21618C;
+  transition: all 500 ease; }
+
+.btn.btn-hover:hover {
+  background-color: #f36e21;
+  color: white; }
+
+.btn.btn-hover:active {
+  transform: translateY(4px); }
+
+/*# sourceMappingURL=style.scss.map */
+
+/*# sourceMappingURL=style.css.map */

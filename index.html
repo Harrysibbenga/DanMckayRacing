@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="static/img/Dan McKay Logo - Orange and White.ico" type="image/x-icon"/>
+    <!-- Bootstrap CSS -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/icl1icy.css">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <title>Dan McKay</title>
+  </head>
+  
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm navbar-dark nav-bg fixed-top py-4" id="main-nav">
+        <div class="container">
+            <a href="#home" class="navbar-brand">
+                <img src="static/img/Dan McKay Logo - Orange and White.png" width="120" height="50">
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse body-font" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Championship</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Mclaren</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#authors" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#authors" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Parallax layout -->
+    <main>
+        <div class="par-head" id="home">
+            <div class="container">
+                <h1 class="header-font">Dan McKay</h1>
+                <hr class="new1" align="left">
+                <p class="body-font text-white">“...for 2019 McLaren has invited Daniel to be one of
+                    the two hand-picked drivers to step up to the European GT4 Championship to race the lead 570S GT4 car in a McLaren-supported programme aimed to win
+                    the championship”</p>
+            </div>
+        </div>
+
+        <div id="about"> 
+            <div class="col-sm-6 col-md-5 shadow p-3 rounded text-white about-sec">
+                <div class="about-text">
+                    <h2 class="header-font wow fadeInRightBig">Dan McKay</h2>
+                    <hr class="new2" align="left">
+                    <p class="mt-5 body-font wow fadeInRight">Proving his racing abilities as he has progressed through the ranks in the seven years he’s been in competition, 27-year old Dan McKay is poised to make his name on the European stage in 2019.
+                        <br>
+                        <br>
+                        After a successful few years in some of the UK’s most competitive national series, including four years racing Legends, he took class victories in Porsche Carrera Cup GB and the British GT Championship, Dan will be showcasing his talents in the GT4 European Series this season.
+                        <br>
+                        <br>
+                        Building on a successful year in which he was named British GT’s ‘Sunoco Fastest GT4 Driver of the Year’ and the fastest GT4 Silver class driver, according to statisticians The B Pillar, Edinburgh-born Dan will be testing himself against the continent’s best over 12 tough events.
+                    </p>
+                    <a class="btn btn-hover wow fadeInRight mt-4" href="#">Find out more</a>
+                </div>
+            </div>
+        </div>    
+
+        <div class="par-mid"></div>
+        <div class="par-bottom"></div>
+    
+    </main>
+    <footer>
+
+    </footer>
+    <!-- Parallax layout -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/js/mdb.min.js"></script>
+    <script src="static/js/script.js"></script>
+    <script>
+      // Update date
+      $('#year').text(new Date().getFullYear());
+
+      // Init Scrollspy 
+      $('body').scrollspy({target: '#main-nav'});
+
+      // Smooth Scrolling
+      $('#main-nav a').on('click', function(e) {
+        if(this.hash !== ""){
+          e.preventDefault();
+          
+          const hash = this.hash;
+          
+          $('html, body').animate({
+              scrollTop: $(hash).offset().top
+          }, 800, function() {
+              
+              window.location.hash = hash;
+          });
+        } 	
+      });
+    </script>
+  </body>
+</html>
