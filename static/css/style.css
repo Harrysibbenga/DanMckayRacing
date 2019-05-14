@@ -3,7 +3,7 @@ body, html, main {
   width: 100;
   margin: 0;
   color: white;
-  background-color: grey; }
+  background-color: black; }
 
 .body-font {
   font-family: upgrade-lights, sans-serif;
@@ -34,6 +34,10 @@ body, html, main {
   background-image: url("/static/img/1 - Monza/3S3A7005.jpg");
   min-height: 100%; }
 
+.par-mid {
+  background-image: url("/static/img/1 - Monza/A38I5247.jpg");
+  min-height: 36rem; }
+
 .section-container {
   position: absolute;
   top: 50%;
@@ -45,13 +49,23 @@ h1.header-font {
   text-underline-position: below;
   color: white; }
 
+hr.new1, hr.new2, hr.new3, hr.new4, hr.new5 {
+  border-top: 3px solid #f36e21; }
+
 hr.new1 {
-  border-top: 3px solid #f36e21;
   width: 17rem; }
 
 hr.new2 {
-  border-top: 3px solid #f36e21;
   width: 7rem; }
+
+hr.new3 {
+  width: 12rem; }
+
+hr.new4 {
+  width: 6rem; }
+
+hr.new5 {
+  width: 5rem; }
 
 #about {
   background-image: url("/static/img/1 - Monza/A38I5209.jpg");
@@ -78,6 +92,14 @@ hr.new2 {
 
 .btn.btn-hover:active {
   transform: translateY(4px); }
+
+.champ-img1, .champ-img2 {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
 
 /*# sourceMappingURL=style.scss.map */
 
