@@ -1,106 +1,590 @@
-body, html, main {
-  height: 100%;
-  width: 100;
-  margin: 0;
+/* basic styles, fonts and effects */
+body{
+  background-color: black; 
   color: white;
-  background-color: black; }
+}
 
 .body-font {
-  font-family: upgrade-lights, sans-serif;
-  font-weight: 400;
-  font-style: normal; }
+font-family: upgrade-lights, sans-serif;
+font-weight: 400;
+font-style: normal; }
 
 .header-font {
-  font-family: bebas-neue-rounded, sans-serif;
-  font-weight: 400;
-  font-style: normal; }
+font-family: bebas-neue-rounded, sans-serif;
+font-weight: 400;
+font-style: normal; 
+letter-spacing: 0.25rem;}
 
-.navbar.navbar-expand-sm.navbar-dark.nav-bg {
-  background-color: black; }
+.sub-font{
+  font-family: paralucent, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.news-spacing {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.icon-color {
+  color: #f36e21;
+}
+.icon-color:hover {
+  color: #f36e21;
+}
+
+.container-fluid, .row {
+  margin:0;
+  padding:0;
+}
+
+.col-sm-6 {
+  padding-left:0;
+  padding-right:0;
+}
+
+.btn.btn-hover {
+  border-color: #f36e21; 
+  color: #f36e21;
+  box-shadow: 0 4px #f36e21;
+  transition: all 500 ease; }
+  
+  .btn.btn-hover:hover {
+  background-color: black;
+  color: white; }
+  
+  .btn.btn-hover:active {
+  transform: translateY(4px); }
+
+  .champ-img1, .champ-img2, .mclaren-img1 .mclaren-img2, .news-img {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    
+  .champ-img2, .mclaren-img2{
+    width: 100%;
+    height: 100%; }
+    
+  .mclaren-img1, .champ-img1, .champ-img2{
+    padding-top: 1rem;
+    width:100%;
+  }
+  .news-img {
+    margin:1rem;
+    width:100%;
+  }
+  .wow {
+    visibility: hidden;
+  }
+  
+  .blog-icon {
+    color: #f36e21;
+    text-align: right;
+    padding-top: 10rem;
+    padding-right: 2rem;
+  }
+  .fa-11x {
+    font-size: 15rem;
+  }
+  
+  p {
+    margin: 1rem 0;
+  }
+  
+  .fa-nav {
+    padding-top: 0.5rem;
+  }
+  .bg-color {
+    background-color: #f36e21;
+  }
+  .order-1{
+    order:1;
+  }
+  .order-2{
+    order:2;
+  }
+  .order-3{
+    order:3;
+  }
+
+/* nav */
+.navbar.navbar-expand-lg.navbar-dark.nav-bg, .navbar.navbar-expand-sm.navbar-dark.nav-bg{
+background-color: black; }
 
 #main-nav {
-  top: -100%;
-  width: 100%;
-  transition: top 0.3s; }
+  top:0;
+}
+.navbar-nav.ml-auto.nav-style {
+  font-size: 1.2rem
+}
+.nav-style {
+  text-align: right;
+}
+.navicons-style {
+  justify-content: flex-end;
+}
+.icon-cont{
+  margin-left:4rem;
+}
+/* home section */
+#home {
+  height: 100vh;
+}
+.head-cont {
+  height: 100vh;
+}
 
-.par-head, .par-mid, .par-bottom {
+.section-container {
+  position: absolute;
+  top: 65%;
+  left: 0;
+  width: 100%; }
+
+  .overlay-home {
+    position: absolute;
+    background:black;
+    opacity: 0.7;
+    width: 100%;
+  }
+  .logo-container {
+    padding:1.5rem 0;
+    width: 370px;
+    height:50px;
+    position: absolute;
+    right: 4.8rem;
+  }
+  #logo {
+    width: 370px;
+    height: 50px;
+  }
+  
+  #logo-cont {
+    margin-right: 4rem;
+  }
+
+/* parallax */
+.par-head ,.par-mid, .par-bottom,.par-footer, .par-news1,.par-news2,.par-news3{
+position: relative;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; }
+
+.par-head {
+background-image: url("../img/GT4 euro series/EquipeVerschuur-3.jpg");
+background-position-x: 38%;
+min-height: 100%; }
+
+.par-mid {
+background-image: url("../img/GT4 euro series/EquipeVerschuur-38.jpg");
+background-position-x: -25rem;
+height: 50rem;}
+
+.par-news1 {
+background-image: url("../img/1 - Monza/A38I5196.jpg");
+background-position-x:72%;
+min-height: 100%; }
+
+.par-news2 {
+background-image: url("../img/McKay stays on top with podium finish on home soil.jpeg");
+background-position-x: 80%;
+min-height: 100%; }
+
+
+.par-news3 {
+background-image: url("../img/GT4 euro series/EquipeVerschuur-25.jpg");
+background-position-x: 20%;
+min-height: 100%; }
+
+.par-bottom {
+  background-image: url("../img/570S GT4-6 1900.jpg");
+  height: 50rem; }
+
+.par-footer {
+  background-image: url("../img/GT4 euro series/EquipeVerschuur-57.jpg");
+height: 50rem; }
+
+/* horizontal lines */
+h1.header-font {
+letter-spacing: 1rem;
+text-underline-position: below;
+color: white; }
+
+hr.new1, hr.new2, hr.new3, hr.new4, hr.new5, hr.new6, hr.new7, hr.new8 {
+border-top: 3px solid #f36e21;
+}
+
+hr.new1 {
+  position: absolute;
+  top: -1rem;
+  z-index:1;
+}
+
+/* about */
+.about {
+  height: 90vh;
+}
+
+.about-sec {
+background-image: url("../img/GT4 euro series/dan cut out.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; 
+background-position-y: unset;
+width: 100%;
+height: 100%;}
+
+.about-sec2{
+  height: 100%;
+  width: 100%;
+}
+.d-block.d-sm-none.about.mt-5 .conatiner-fluid .col-sm-12{
+  padding-left:0;
+  padding-right:0;
+}
+.about-container {
+  opacity: 0.8;
+  background-color: black; 
+  height: 100%;
+  position: relative;
+  padding: 1rem 2rem;
+  height: 100%;
+}
+
+/* mclaren */
+#mclaren .container-fluid .row .col-sm-6.d-none.d-sm-none.d-xl-block {
+  height: 100%;
+}
+.desc-cont {
+  background-color: #f36e21;
+  width: 100%;
+  height: 100%;
+}
+
+/* partners */
+.partners-logo {
+  height: 100%;
+  width: 100%;
+}
+.logo-cont {
+  background-color: white;
+}
+
+/* news */
+#news .card.card-ecommerce .card-footer {
+  background-color: transparent;
+}
+
+#news .card-body.card-body-cascade.text-center{
+  background: white;
+}
+#news .card.card-cascade.wider{
+  background-color:#f36e21;
+}
+#news .card-img-top {
+  height:100%;
+}
+
+#news .card .card-body .card-text {
+  color: black;
+  font-size: 1rem;
+}
+.news-title {
+  background-color: black;
+  position: absolute;
+  padding-bottom:3%;
+  width:100%;
+  bottom:0;
+  opacity:0.8;
+}
+
+#news-head .col-sm-6,#news-body .col-sm-6,#news-foot .col-sm-6 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#news-head .container,#news-body .container,#news-foot .container{
+  margin: 1rem auto;
+}
+
+#news-foot {
+  margin-bottom: 2rem;
+}
+
+/* signup */
+#signup-form .card{
+  padding-left: 0;
+  padding-right: 0;
+}
+#signup-form {
+position: relative;
+height:37rem;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background: url("../img/GT4 euro series/EquipeVerschuur-56.jpg");
+}
+
+#signup-form .card .sub-font {
+  font-size: 2rem;
+}
+
+.dark-overlay {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.7)
+}
+/* modal */
+
+/* .modal-body input, textarea{
+  color: honeydew !important;
+} */
+
+/* footer */
+footer {
+  padding-top: 2rem;
+}
+
+/* media queries */
+@media (max-width:430px) {
+  .about-container {
+    top: 33rem;
+  }
+}
+@media (max-width: 575px) {
+  #logo{
+      width: 200px;
+      height: 25px;
+  }
+  #logo-cont {
+    margin: 0px;
+  }
+  .container {
+  flex-direction: column;
+  }
+  .about-container {
+    top: 40rem;
+  }
+  .about-sec {
+    background-position-x: -55rem;
+  }
+  #about {
+    height: 126vh;
+  }
+  #news .col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  #main-nav {
+    top: -100%;
+    width: 100%;
+    transition: top 0.3s; }
+}
+
+@media (max-width: 767px) {
+  hr.new2 {
+      width: 8.9rem;
+  }
+  
+  hr.new3 {
+      width: 15.4rem;
+  }
+  
+  hr.new4 {
+      width: 7.25rem;
+  }
+  
+  hr.new5 {
+      width: 4.25rem;
+  }
+  hr.new6 {
+      width: 100%;
+  }
+  hr.new7 {
+      width: 100%;
+  }
+  hr.new8 {
+      width: 7.5rem;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .par-head, .par-mid, .par-bottom, .par-news1,.par-news2,.par-news3 {
   position: relative;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
-.par-head {
-  background-image: url("/static/img/1 - Monza/3S3A7005.jpg");
-  min-height: 100%; }
+  hr.new1, hr.new2, hr.new3, hr.new4, hr.new5, hr.new8 {
+  border-top: 3px solid #f36e21;
+  width: 0px;
+  transition: width 1.5s ease-in; }
+  
+  .contact-information {
+      margin-top: 3rem;
+  }
+}
 
-.par-mid {
-  background-image: url("/static/img/1 - Monza/A38I5247.jpg");
-  min-height: 36rem; }
+@media (min-width: 768px) and (max-width: 1023px) {
+  #championship .container-fluid .col-sm-6 .body-font {
+      padding: 4rem 0;
+  }
+  .blog-icon {
+      padding-top: 10rem;
+      padding-right: 2rem;
+  }
+  .fa-11x {
+      font-size: 15rem;
+  }
+  
+}
+@media (max-width: 991px) {
+  .nav-cont {
+    order:1 !important;
+  }
+  .icon-cont {
+    order:2 !important;
+  }
+  .collapsing-cont {
+    order:3 !important;
+  }
+  #logo {
+    order:2 !important;
+  }
+  .navbar-toggler {
+    order:0;
+  }
+  .nav-cont {
+    align-items: self-start;
+  }
+  .nav-style {
+    text-align: left;
+  }
 
-.section-container {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%; }
+  .navicons-style {
+    justify-content: flex-start;
+  }
+  .icon-cont {
+    margin-left:0;
+  }
+}
+@media (min-width:1024px) {
+  .section-container {
+    top: 70%; 
+    width:50%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  #championship .container-fluid .col-sm-6 .body-font {
+      padding: 6rem 0;
+  }
+  .blog-icon {
+      padding-top: 15rem;
+      padding-right: 4rem;
+  }
+  .fa-11x {
+      font-size: 12rem;
+  }
+  .about {
+      height: 50rem;
+  }
+}
 
-h1.header-font {
-  letter-spacing: 1rem;
-  text-underline-position: below;
-  color: white; }
+@media (min-width: 1440px) and (max-width: 2559px){
+  .body-font {
+  font-size: 1.3rem;}
 
-hr.new1, hr.new2, hr.new3, hr.new4, hr.new5 {
-  border-top: 3px solid #f36e21; }
+  .header-font {
+      font-size: 4rem;
+  }
+  .header-font.wow.fadeInRightBig.pt-4 {
+      letter-spacing: 0.5rem;
+  }
+  #championship .container-fluid .col-sm-6 .body-font {
+      padding: 7rem 0;
+  }
+  .about-container {
+      padding: 6rem;
+  }
+  .about-text{
+    padding-top: 2rem;
+  }
+  #championship .container-fluid .col-sm-6 .body-font {
+      padding: 4rem 0;
+  }
+  .desc-cont {
+    padding: 6rem;
+  }
 
-hr.new1 {
-  width: 17rem; }
+}
 
-hr.new2 {
-  width: 7rem; }
+@media (min-width: 1440px) and (max-width:1739px) {
+  #championship .container-fluid .col-sm-6 .body-font {
+      padding: 20rem 0;
+  }
+  .blog-icon {
+      padding-top: 15rem;
+      padding-right: 10rem;
+  }
+  .fa-11x {
+      font-size: 15rem;
+  }
+}
 
-hr.new3 {
-  width: 12rem; }
+@media (min-width:1740px) and (max-width:2199px) {
+  .blog-icon {
+      padding-top: 25rem;
+      padding-right: 10rem;
+  }   
+}
+@media (min-width: 2200px) {
+  .blog-icon {
+      padding-top: 30rem;
+      padding-right: 10rem;
+  }
+  .fa-11x {
+      font-size: 30rem;
+  }
+}
 
-hr.new4 {
-  width: 6rem; }
-
-hr.new5 {
-  width: 5rem; }
-
-#about {
-  background-image: url("/static/img/1 - Monza/A38I5209.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.about-sec {
-  opacity: 0.8;
-  background-color: black; }
-
-.about-text {
-  opacity: 1; }
-
-.btn.btn-hover {
-  border-color: #ff9800;
-  color: orange;
-  box-shadow: 0 4px #21618C;
-  transition: all 500 ease; }
-
-.btn.btn-hover:hover {
-  background-color: #f36e21;
-  color: white; }
-
-.btn.btn-hover:active {
-  transform: translateY(4px); }
-
-.champ-img1, .champ-img2 {
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%; }
-
-/*# sourceMappingURL=style.scss.map */
-
-/*# sourceMappingURL=style.css.map */
+@media (min-width: 2560px){
+  #championship .container-fluid .col-sm-6 .body-font {
+      padding: 11rem 0;
+  }
+  #mclaren .container-fluid .col-sm-12.col-xl-6 {
+      padding: 2rem 1rem;
+  }
+  h1.header-font {
+      font-size: 6rem;
+  }
+  .header-font {
+      font-size: 4.5rem;
+  }
+  .body-font {
+      font-size: 2.5rem;
+  }
+  .container {
+      max-width: 1600px;
+  }
+  .about-text {
+      padding-top: 5rem;
+  }
+  .about-container {
+      padding: 2rem 5rem;
+  }
+  #news .body-font.wow {
+      padding-top: 2rem;
+  }
+  #news .card .card-body .card-title {
+      font-size: 2rem;
+  }
+  #news .card .card-body .card-text {
+      font-size: 1.5rem;
+  }
+}
