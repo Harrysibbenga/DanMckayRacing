@@ -16,10 +16,11 @@ font-style: normal;
 letter-spacing: 0.25rem;}
 
 .sub-font{
-  font-family: paralucent, sans-serif;
-  font-weight: 300;
+  font-family: titillium-web, sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
+
 .news-spacing {
   margin-top: 50px;
   margin-bottom: 20px;
@@ -153,7 +154,11 @@ background-color: black; }
     position: absolute;
     right: 4.8rem;
   }
-  #logo {
+  .logo-head {
+    width: 370px;
+    height: 50px;
+  }
+  .logo {
     width: 370px;
     height: 50px;
   }
@@ -238,9 +243,14 @@ background-position-y: unset;
 width: 100%;
 height: 100%;}
 
-.about-sec2{
-  height: 100%;
+.about2{
+  height: 55rem;
   width: 100%;
+}
+
+.about2-img{
+  height:100%;
+  width:100%;
 }
 .d-block.d-sm-none.about.mt-5 .conatiner-fluid .col-sm-12{
   padding-left:0;
@@ -265,6 +275,9 @@ height: 100%;}
   height: 100%;
 }
 
+.d-block.d-lg-none.wow.slideInRight.mt-3 {
+  padding:0 15px;
+}
 /* partners */
 .partners-logo {
   height: 100%;
@@ -273,6 +286,7 @@ height: 100%;}
 .logo-cont {
   background-color: white;
 }
+
 
 /* news */
 #news .card.card-ecommerce .card-footer {
@@ -340,11 +354,6 @@ background: url("../img/GT4 euro series/EquipeVerschuur-56.jpg");
   height:100%;
   background-color: rgba(0, 0, 0, 0.7)
 }
-/* modal */
-
-/* .modal-body input, textarea{
-  color: honeydew !important;
-} */
 
 /* footer */
 footer {
@@ -358,7 +367,7 @@ footer {
   }
 }
 @media (max-width: 575px) {
-  #logo{
+  .logo{
       width: 200px;
       height: 25px;
   }
@@ -388,6 +397,14 @@ footer {
     top: -100%;
     width: 100%;
     transition: top 0.3s; }
+  
+    .logo, .logo-head{
+    width: 300px;
+    height: 35px;
+  }
+  .logo-container {
+    right: 0.6rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -459,7 +476,7 @@ footer {
   .collapsing-cont {
     order:3 !important;
   }
-  #logo {
+  .logo {
     order:2 !important;
   }
   .navbar-toggler {
@@ -477,6 +494,15 @@ footer {
   }
   .icon-cont {
     margin-left:0;
+  }
+}
+@media (min-width:992px) {
+  .logo,.logo-head {
+    width:370px;
+    height:50px;
+  }
+  .logo-container {
+    right: 4.8rem;
   }
 }
 @media (min-width:1024px) {
