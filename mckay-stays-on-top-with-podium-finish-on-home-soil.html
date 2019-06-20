@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Dan McKay continued to dazzle in the GT4 European Series as he and team-mate Benjamin Lessennes remained atop the championship standings as they took a third-straight podium finish at Brands Hatch after a double victory to open the season in Italy.">
     <!-- favicon -->
     <link rel="shortcut icon" href="./static/img/Dan McKay Favicon.ico" type="image/x-icon"/>
     <!-- Bootstrap CSS -->
@@ -13,8 +14,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/icl1icy.css">
     <link rel="stylesheet" href="./static/css/bootstrap.css">
+    <!-- custom css -->
     <link rel="stylesheet" href="./static/css/style.css">
-    <title>Dan McKay</title>
+    <title>McKay stays on top with podium finish on home soil.</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142329778-1"></script>
     <script>
@@ -23,14 +25,6 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-142329778-1');
-    </script>
-    <!-- Recaptcha -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init("user_NneW5XuAU0JIqdI7Wr8RN");
-        })();
     </script>
   </head>
   
@@ -160,9 +154,9 @@
             <div class="dark-overlay py-5">
                 <!-- Material form subscription -->
                 <div class="card col-sm-12 col-md-6 offset-md-3 ">
-                    <h5 class="card-header bg-color white-text text-center py-4">
+                    <h2 class="card-header bg-color white-text text-center py-4">
                         <strong class="sub-font text-black">Subscribe</strong>
-                    </h5>
+                    </h2>
                     <!--Card content-->
                     <div class="card-body px-lg-5" id="mc_embed_signup" aria-labelledby="mc_embed_signup">
                         <!-- Form -->
@@ -209,40 +203,39 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header text-center">
-                    <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                    <h2 class="modal-title w-100 font-weight-bold">Write to us</h2>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form name="contact-form" id="contact-form" method="POST">
+                <form method="POST" action="https://formspree.io/harry@torquetogether.com">
                     <div class="modal-body mx-3">
                         <div class="md-form mb-5">
                             <i class="fas fa-user prefix grey-text"></i>
                             <label data-error="wrong" data-success="right" for="user_name">Your name</label>
-                            <input type="text" id="user_name" class="form-control validate">
+                            <input type="text" id="user_name" class="form-control validate" name="name">
                         </div>
 
                         <div class="md-form mb-5">
                             <i class="fas fa-envelope prefix grey-text"></i>
                             <label data-error="wrong" data-success="right" for="user_email">Your email</label>
-                            <input type="email" id="user_email" class="form-control validate">
+                            <input type="email" id="user_email" class="form-control validate" name="email">
                         </div>
 
                         <div class="md-form mb-5">
                             <i class="fas fa-tag prefix grey-text"></i>
                             <label data-error="wrong" data-success="right" for="subject">Subject</label>
-                            <input type="text" id="subject" class="form-control validate">
+                            <input type="text" id="subject" class="form-control validate" name="subject">
                         </div>
 
                         <div class="md-form">
                             <i class="fas fa-pencil prefix grey-text"></i>
                             <label data-error="wrong" data-success="right" for="message">Your message</label>
-                            <textarea type="text" id="message" class="md-textarea form-control" rows="4"></textarea>
+                            <textarea type="text" id="message" class="md-textarea form-control" rows="4" name="message"></textarea>
                         </div>
                     </div>
                     <div class="modal-footer d-flex justify-content-center">
-                        <div class="g-recaptcha" data-sitekey="6Lcxa6kUAAAAAKZVhGL-1WyRWgMorVOfOIsjIohM"></div>
-                        <button onclick="contactMe();" class="btn btn-unique" type="submit">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
+                        <button class="btn btn-unique" type="submit">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
                     </div>
                 </form>
             </div>
@@ -285,7 +278,6 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/js/mdb.min.js"></script>
     <script src="./static/js/script.js"></script>
-    <script src="./static/js/sendEmail.js"></script>
     <script>
         $.noConflict();
         jQuery( document ).ready(function( $ ) {
