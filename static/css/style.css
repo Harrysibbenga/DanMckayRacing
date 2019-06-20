@@ -172,7 +172,7 @@ background-size: cover; }
 .par-head {
 background-image: url("../img/GT4 euro series/EquipeVerschuur-3.jpg");
 background-position-x: 38%;
-opacity: 0.2;
+opacity: 0;
 min-height: 100%; }
 
 .par-head.head-animation {
