@@ -276,31 +276,6 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/js/mdb.min.js"></script>
     <script src="./static/js/script.js"></script>
-    <script>
-        $.noConflict();
-        jQuery( document ).ready(function( $ ) {
-            // Update date
-            $('#year').text(new Date().getFullYear());
-
-            // Smooth Scrolling
-            $(document).on('click', 'a[href^="#"]', function (event) {
-                event.preventDefault();
-
-                $('html, body').animate({
-                    scrollTop: $($.attr(this, 'href')).offset().top
-                }, 500);
-            });
-
-            // Wow animations
-            new WOW().init();
-            $( ".wow" ).addClass( "fadeInUp" );
-            
-            $(document).ready(function() {
-                $('input').click(function(){
-                    $(this).nextAll().toggleClass('active');
-                });
-            });
-        });
-    </script>
+    <script src="./static/js/jquery.js"></script>
   </body>
 </html>

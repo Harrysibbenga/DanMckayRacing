@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <meta name="description" content="Professional Scottish Racing Driver, fastest British GT4 Driver 2018 B Pillar, fastest British GT4 Driver 2018 and British GT Race Winner. Dan Mckay, GT4 Series Championship, European, Mclaren 570S GT4.">
     <meta name="robots" content="index, follow">
     <!-- favicon -->
@@ -423,95 +423,6 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/js/mdb.min.js"></script>
     <script src="./static/js/script.js"></script>
-    <script>
-        $.noConflict();
-        jQuery( document ).ready(function( $ ) {
-
-            // Update date
-            $('#year').text(new Date().getFullYear());
-
-            // Smooth Scrolling
-            $(document).on('click', 'a[href^="#"]', function (event) {
-                event.preventDefault();
-
-                $('html, body').animate({
-                    scrollTop: $($.attr(this, 'href')).offset().top
-                }, 500);
-            });
-
-            // hr Transition
-            $(document).ready(function () {
-                if ($('hr.new1').width() == 0) {
-                    $('hr.new1').css('width', '100%')
-                }
-            });
-
-            $(window).scroll(function() {
-                if ($(window).width() >= 768 && $(window).width() < 1440) {
-                    if($(this).scrollTop() >= 300) {
-                        $('hr.new2').css('width', '16.6rem')
-                        if($(this).scrollTop() >= 1600) {
-                            $('hr.new3').css('width', '15.4rem')
-                            if($(this).scrollTop() >= 2200) {
-                                $('hr.new4').css('width', '7.2rem')
-                                if($(this).scrollTop() >= 3600) {
-                                    $('hr.new8').css('width', '7.9rem')
-                                    if($(this).scrollTop() >= 4200) {
-                                        $('hr.new5').css('width', '4.2rem')
-                                    }
-                                }
-                            }
-                        }
-                    }
-                } else if ($(window).width() >= 1440 && $(window).width() < 2560) {
-                    if($(this).scrollTop() >= 180) {
-                        $('hr.new2').css('width', '17.5rem')
-                        if($(this).scrollTop() >= 1400) {
-                            $('hr.new3').css('width', '26.75rem')
-                            if($(this).scrollTop() >= 2200) {
-                                $('hr.new4').css('width', '13rem')
-                                if($(this).scrollTop() >= 4050) {
-                                    $('hr.new8').css('width', '14.2rem')
-                                    if($(this).scrollTop() >= 4900) {
-                                        $('hr.new5').css('width', '7.5rem')
-                                    }
-                                }
-                            }
-                        }
-                    }
-                } else if ($(window).width() >= 2560 ) {
-                    if($(this).scrollTop() >= 560) {
-                        $('hr.new2').css('width', '29.75rem')
-                        if($(this).scrollTop() >= 2000) {
-                            $('hr.new3').css('width', '30.25rem')
-                            if($(this).scrollTop() >= 3500) {
-                                $('hr.new4').css('width', '14.6rem')
-                                if($(this).scrollTop() >= 4550) {
-                                    $('hr.new8').css('width', '14.8rem')
-                                    if($(this).scrollTop() >= 5500) {
-                                        $('hr.new5').css('width', '8.75rem')
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            });
-
-            $(document).ready(function(){
-                $(".par-head").addClass("head-animation");
-            })
-
-            // Wow animations
-            new WOW().init();
-            $( ".wow" ).addClass( "fadeInUp" );
-            
-            $(document).ready(function() {
-                $('input').click(function(){
-                    $(this).nextAll().toggleClass('active');
-                });
-            });
-        });
-    </script>
+    <script src="./static/js/jquery.js"></script>
   </body>
 </html>
