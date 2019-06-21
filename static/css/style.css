@@ -44,7 +44,7 @@ letter-spacing: 0.25rem;}
 }
 
 .btn.btn-hover {
-  border-color: #f36e21; 
+  border:1px solid #f36e21; 
   color: #f36e21;
   box-shadow: 0 4px #f36e21;
   transition: all 500 ease; }
@@ -252,6 +252,10 @@ height: 100%;}
   height:100%;
   width:100%;
 }
+
+.dan {
+  padding:0;
+}
 .d-block.d-sm-none.about.mt-5 .conatiner-fluid .col-sm-12{
   padding-left:0;
   padding-right:0;
@@ -286,8 +290,6 @@ height: 100%;}
 .gt4-cont {
   background-color: white;
 }
-
-
 /* news */
 #news .card.card-ecommerce .card-footer {
   background-color: transparent;
@@ -302,11 +304,19 @@ height: 100%;}
 #news .card-img-top {
   height:100%;
 }
+#news .card-body.card-body-cascade.text-center h3 strong a{
+  color: grey;
+}
+
+#news .card-body.card-body-cascade.text-center h3 strong a:hover{
+  color: #f36e21;
+}
 
 #news .card .card-body .card-text {
   color: black;
   font-size: 1rem;
 }
+
 .news-title {
   background-color: black;
   position: absolute;
@@ -329,6 +339,10 @@ height: 100%;}
   margin-bottom: 2rem;
 }
 
+/* modal */
+#contactFormModal .btn.btn-hover.btn-rounded.btn-block.z-depth-0.my-4.waves-effect {
+  font: 400 11px system-ui;
+}
 /* signup */
 #signup-form .card{
   padding-left: 0;
@@ -344,8 +358,15 @@ background: url("../img/GT4 euro series/EquipeVerschuur-56.jpg");
 
 #signup-form .card .sub-font {
   font-size: 2rem;
+  color:black;
 }
 
+#signup-form a.icon-color{
+  color:black;
+}
+#signup-form a.icon-color:hover {
+  color:#f36e21;
+}
 .dark-overlay {
   position: absolute;
   top:0;
